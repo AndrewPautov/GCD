@@ -13,7 +13,6 @@ class MyFourthViewController: UIViewController {
         super.viewDidLoad()
         title = "Lesson 4"
         view.backgroundColor = .white
-        createTabBar()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -35,9 +34,4 @@ class MyFourthViewController: UIViewController {
         semaphoreTest.startAllThreads()
     }
     
-    func createTabBar() {
-        var tabBatItem = UITabBarItem()
-        tabBatItem = UITabBarItem(tabBarSystemItem: .history, tag: 3)
-        self.tabBarItem = tabBatItem
-    }
 }

@@ -17,8 +17,6 @@ class MySecondViewController: UIViewController {
         title = "Lesson 2"
         view.backgroundColor = .white
         
-        createTabBar()
-        
         button.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
         
         afterBlock(seconds: 2, queue: .main) {
@@ -78,11 +76,5 @@ class MySecondViewController: UIViewController {
         let vc = ThirdViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
-    
-    func createTabBar() {
-        var tabBarItem = UITabBarItem()
-        tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 1)
-        self.tabBarItem = tabBarItem
-    }
+
 }

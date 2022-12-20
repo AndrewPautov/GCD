@@ -67,6 +67,7 @@ class DispatchGroupTest2 {
     
 }
 
+// MARK: - Exapmle 3 of Dispatch Group in Simulalor
 class EightImage: UIView {
     public var ivs = [UIImageView]()
     

@@ -20,7 +20,6 @@ class MyThirdViewController: UIViewController {
         super.viewDidLoad()
         title = "Lesson 3"
         view.backgroundColor = .white
-        createTabBar()
         doLesson3()
     }
     
@@ -46,12 +45,6 @@ class MyThirdViewController: UIViewController {
         }
         imageView.center = view.center
         view.addSubview(imageView)
-    }
-    
-    func createTabBar() {
-        var tabBarItem = UITabBarItem()
-        tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 2)
-        self.tabBarItem = tabBarItem
     }
     
     func doLesson3() {

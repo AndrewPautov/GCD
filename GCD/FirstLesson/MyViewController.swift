@@ -14,7 +14,6 @@ class MyViewController: UIViewController {
         super.viewDidLoad()
         self.title = "VC 1"
         view.backgroundColor = .white
-        createTabBar()
         button.addTarget(self, action: #selector(pressAction), for: .touchUpInside)
         
     }
@@ -37,12 +36,6 @@ class MyViewController: UIViewController {
     @objc func pressAction() {
         let vc = SecondViewController()
         self.navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    func createTabBar() {
-        var tabBarItem = UITabBarItem()
-        tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
-        self.tabBarItem = tabBarItem
     }
 
 }

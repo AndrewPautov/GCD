@@ -11,7 +11,7 @@ class MainViewController: UIViewController {
 
     private let tableView = UITableView()
     private let id = "cell"
-    private var arrayOfControllers = [MyViewController(), MySecondViewController(), MyThirdViewController(), MyFourthViewController(), MyFifthViewController()]
+    private var arrayOfControllers = [MyViewController(), MySecondViewController(), MyThirdViewController(), MyFourthViewController(), MyFifthViewController(), MySixthViewController(), MySeventhViewController()]
     
     override func viewDidLoad() {
         super.viewDidLoad()

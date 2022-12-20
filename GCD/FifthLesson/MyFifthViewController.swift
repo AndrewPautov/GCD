@@ -13,7 +13,6 @@ class MyFifthViewController: UIViewController {
         super.viewDidLoad()
         title = "Lesson5"
         view.backgroundColor = .white
-        createTabBar()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -40,12 +39,6 @@ class MyFifthViewController: UIViewController {
             }
         }
         view.addSubview(viewImage)
-    }
-    
-    func createTabBar() {
-        var tabBarItem = UITabBarItem()
-        tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 4)
-        self.tabBarItem = tabBarItem
     }
     
 }
