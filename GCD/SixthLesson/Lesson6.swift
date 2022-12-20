@@ -33,6 +33,7 @@ class SafeArray<T> {
         queue.sync {
             result = self.array
         }
+        
         return result
     }
 }
